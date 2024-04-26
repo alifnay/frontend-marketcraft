@@ -4,9 +4,61 @@
     flex-shrink: 0;
     background: #252525;
 }
+
 .logo{
     width: 103px;
     height: 42px;
     flex-shrink: 0;
     background: url(dark_logo.png)lightgray 50% / cover no-repeat;
+}
+
+.sign-in-body{
+    width: 1440px;
+    height: 900px;
+    flex-shrink: 0;
+    background: #F0F2F5;
+}
+
+.login-logo img{
+    width: 161px;
+    height: 66px;
+    flex-shrink: 0;
+}
+
+.login-box{
+    width: 400px;
+    height: 579px;
+    flex-shrink: 0;
+    margin-top: 65px;
+    margin-left: 203px;
+}
+
+.welcome{
+    color: #000;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px; /* 122.222% */
+}
+
+.desk-login{
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.163px; /* 162.016% */
+}
+
+.text-input{
+    width: 400px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    background: var(--Color, #FFF);
+    padding-top: 27px;
+    padding-left: 24px;
+    padding-bottom: 28px;
 }
