@@ -1,0 +1,12 @@
+.navbar{
+    width: 1440px;
+    height: 81px;
+    flex-shrink: 0;
+    background: #252525;
+}
+.logo{
+    width: 103px;
+    height: 42px;
+    flex-shrink: 0;
+    background: url(dark_logo.png)lightgray 50% / cover no-repeat;
+}
