@@ -13,8 +13,6 @@
 }
 
 .sign-in-body{
-    width: 1440px;
-    height: 900px;
     flex-shrink: 0;
     background: #F0F2F5;
 }
@@ -61,4 +59,32 @@
     padding-top: 27px;
     padding-left: 24px;
     padding-bottom: 28px;
+}
+
+.knob{
+    width: 40px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 36.5px;
+    border: 0.5px solid #C9C9C9;
+    background: #ECECEC;
+}
+
+.knob-button{
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--Color, #FFF);
+    box-shadow: 1px 1px 2px -1px rgba(51, 51, 51, 0.30);
+}
+
+.content-right{
+    display: grid;
+}
+
+.content-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
