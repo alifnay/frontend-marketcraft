@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body style="background-color: #F0F2F5;">
-    <div class="grid grid-cols-5">
+    <div class="grid grid-cols-1 md:grid-cols-5">
 
         <!--Content Left-->
         <div class="col-span-3 p-10 relative">
             <div class="w-40 h-17">
                 <img src="images\light_logo.png" alt="\">
             </div>
-            <div class="container flex justify-center items-center mt-16">
+            <div class="container flex justify-center items-center mt-8">
                 <div class="w-100 h-200 flex-shrink-0 ">
                     <div class="text-black font-poppins font-[640] text-4xl leading-11 welcome text-center">
                         Welcome Back
@@ -39,20 +39,18 @@
                     </div>
 
                     <!--Remember Me and Recover Pass-->
-                    <div class="flex" style="margin-top: 33px;">
+                    <div class="flex items-center" style="margin-top: 33px;">
                         <div>
-                            <input type="checkbox" id="toggle" class="sr-only">
-                            <label for="toggle" class="items-center cursor-pointer">
-                                <div class="w-10 h-5 flex-shrink-0 rounded-full border border-gray-300 bg-gray-200">
-                                    <div class="w-4 h-4 flex-shrink-0 rounded-full bg-white shadow-md"></div>
-                                </div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
                             </label>
                         </div>
-                        <div class="justify-between">
+                        <div class="justify-between mb-1">
                             <div class="ml-2">Remember Me</div>
                         </div>
                         <div class="ml-auto">
-                            <div class="text-red-500">Recover Password</div>
+                            <a href="" class="text-red-500">Recover Password</a>
                         </div>
                     </div>
 
@@ -66,13 +64,13 @@
                     <!--Google and Facebook-->
                     <div class="grid grid-cols-2 mt-9">
                         <div class="col-span ml-16">
-                            <button class="flex items-center justify-center w-32 h-11 flex-shrink-0 rounded-md border border-green-500 bg-white p-3">
+                            <button class="flex items-center justify-center w-32 h-11 flex-shrink-0 rounded-md border border-gray-300 hover:border-green-500 bg-white p-3">
                                 <img src="images\google_logo.svg" alt="">
                                 <div class="font-poppins text-black text-xs font-medium leading-44 ml-2">Google</div>
                             </button>
                         </div>
-                        <div class="col-span ml-5">
-                            <button class="flex items-center justify-center w-32 h-11 flex-shrink-0 rounded-md border border-gray-300 bg-white">
+                        <div class="col-span ">
+                            <button class="flex items-center justify-center w-32 h-11 flex-shrink-0 rounded-md border border-gray-300 hover:border-blue-500 bg-white">
                                 <img src="images\facebook_logo.svg" alt="">
                                 <div class="font-poppins text-black text-xs font-medium leading-44 ml-2">Facebook</div>
                             </button>
@@ -99,10 +97,17 @@
             </div>
         </div>
 
-
-        <div class="col-span-2 relative">
-            <img src="images\img-login.jpg" alt="" class="h-screen w-screen">
-            
+        <!--Content Right-->
+        <div class="hidden md:block col-span-2 relative">
+            <img src="images\img-login.jpg" alt="" class="h-full w-screen relative">
+            <div class="container absolute w-[547px] h-[270px] bottom-9 left-9 rounded-lg p-[24px]" style="border-radius: 10px; background: rgba(255, 242, 242, 0.13);backdrop-filter: blur(50px);">
+                <div class="flex items-center justify-center w-[238px] h-[45px] rounded-lg bg-green-500">
+                    <div class="text-black font-roboto text-base text-sm font-normal">Best Craft Marketplace in UNY</div>
+                </div>
+                <div class="text-white font-poppins text-base font-normal mt-[17px]">
+                    UNY Craft Market, Yogyakarta State’s Universities number 1 craft marketplace provide craftsmen and craft enjoyers all over Yogyakarta to buy, sell, and enjoy arts and crafts ranging from traditional, modern, and mixed crafts from Indonesia
+                </div>
+            </div>
         </div>
     </div>
 </body>
