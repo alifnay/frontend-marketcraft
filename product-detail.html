@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Product Detail</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="absolute w-full h-16" style="background-color: #252525">
+      <div class="container mx-auto flex justify-between items-center h-16">
+        <!-- logo kiri -->
+        <img src="Assets\logodark.png" alt="" class="h-10 pl-4 box-content" />
+        <!-- search bar -->
+        <div class="relative w-1/3 flex items-center justify-start rounded-full" style="background-color: #fbe5dd">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute left-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+          <input type="text" class="w-full py-4 pl-10 h-6 placeholder-red-300 rounded-full" placeholder="Cari di UNY Market" style="background-color: #fbe5dd" />
+        </div>
+        <!-- menu kanan -->
+        <div class="flex items-center">
+          <div class="text-white mr-14" style="color: #fff000">Home</div>
+          <div class="text-white mr-14" style="color: #fff000">Catalog</div>
+          <div class="text-white mr-14" style="color: #fff000">Contact</div>
+        </div>
+        <!-- logo kanan -->
+        <div class="flex items-center pr-20">
+          <img src="Assets\user.png" alt="" class="mr-7" />
+          <img src="Assets\Favorite.png" alt="" class="mr-7" />
+          <img src="Assets\Basket_alt_3.png" alt="" class="mr-7" />
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
