@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <div class="grid grid-col-1 md:grid-cols-5">
+      <!-- Left Side -->
+      <div class="hidden md:block col-span-2 relative">
+        <img src="Assets\bg1.png" alt="" class="h-screen w-screen relative" />
+        <img src="Assets\logodark.png" alt="" class="absolute top-0 left-0 ml-8 mt-8 h-28 w-38" />
+        <div class="container absolute bottom-16 right-10 w-44 h-32 bg-opacity-20 bg-black rounded-lg pt-4 pl-4" style="backdrop-filter: blur(20px)">
+          <img src="Assets\teleskop.png" alt="" class="h-8 w-8 rounded-lg" />
+          <div class="text-white text-sm font-roboto font-normal leading-normal break-words bg-transparent pt-2">Best Marketplace in Yogyakarta State University</div>
+        </div>
+      </div>
+      <!-- Right Side -->
+      <div class="relative col-span-3 h-screen flex justify-center flex" style="background: #f0f2f5">
+        <!-- box-content -->
+        <div class="mt-10 flex flex-col box-content top-10 h-auto w-auto" style="background: #f0f2f5">
+          <div class="text-black text-2xl font-semibold font-poppins leading-5 text-center">Get Started With UNYCraft</div>
+
+          <div class="text-gray-700 text-sm font-normal font-poppins text-center mt-3 mb-2">Getting Started is Easy</div>
+
+          <div class="grid grid-cols-1 gap-4">
+            <div class="relative">
+              <input
+                class="block w-96 h-16 px-4 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border border-gray-300 rounded-lg shadow appearance-none focus:outline-none focus:shadow-outline font-poppins"
+                placeholder="Full Name"
+                id="username"
+                type="text"
+              />
+            </div>
+
+            <div class="relative">
+              <input
+                class="block w-96 h-16 px-4 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border border-gray-300 rounded-lg shadow appearance-none focus:outline-none focus:shadow-outline font-poppins"
+                placeholder="Enter Email"
+                id="email"
+                type="email"
+              />
+            </div>
+            <div class="relative">
+              <input
+                class="block w-96 h-16 px-4 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border border-gray-300 rounded-lg shadow appearance-none focus:outline-none focus:shadow-outline font-poppins"
+                placeholder="Password"
+                id="password"
+                type="password"
+              />
+            </div>
+            <div class="relative">
+              <input
+                class="block w-96 h-16 px-4 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border border-gray-300 rounded-lg shadow appearance-none focus:outline-none focus:shadow-outline font-poppins"
+                placeholder="Confirm Password"
+                id="confirmpassword"
+                type="password"
+              />
+            </div>
+            <div class="box-content h-16 w-96 rounded-lg border border-gray-300 flex items-center justify-center" style="background-color: #20dc49">
+              <div class="p-3 text-gray-600 text-sm font-poppins font-normal leading-5">Create Account</div>
+            </div>
+            <div class="h-auto w-auto flex flex-row mx-auto pt-1">
+              <div class="box-content text-black text-sm font-light leading-snug font-poppins pr-1" style="line-height: 14.5px">have an account?</div>
+              <div class="box content text-sm font-medium leading-none font-poppins" style="color: #20dc49">Sign in!</div>
+            </div>
+
+            <!-- or continue with -->
+            <div class="flex items-center justify-center text-gray-400 text-xs mt-6">
+              <div class="border-b border-gray-300 flex-1"></div>
+              <div class="mx-2">Or Continue With</div>
+              <div class="border-b border-gray-300 flex-1"></div>
+            </div>
+
+            <!-- button -->
+            <div class="flex flex-row mx-auto">
+              <button class="w-28 h-10 object-center bg-white rounded-lg border-2 border-gray-300 mr-12">
+                <div class="flex flex-row justify-center items-center">
+                  <img src="Assets/logogoogel.png" alt="" class="h-6 w-6" />
+                  <div class="text-black text-sm font-light leading-snug font-poppins pl-2">Google</div>
+                </div>
+              </button>
+              <button class="w-28 h-10 object-center bg-white rounded-lg border-2 border-gray-300">
+                <div class="flex flex-row justify-center items-center">
+                  <img src="Assets/logofesbuk.png" alt="" class="h-6 w-6" />
+                  <div class="text-black text-sm font-light leading-none font-poppins pl-2">Facebook</div>
+                </div>
+              </button>
+            </div>
+            <!-- end of button -->
+          </div>
+          <div class="bottom-0 w-full h-16 flex items-center justify-center">
+            <div class="absolute h-auto w-auto flex flex-row mx-auto pt-4">
+              <div class="box-content text-black text-sm font-light leading-snug font-poppins pr-1" style="line-height: 14.5px">
+                By continuing, you indicate that you read and agreed to the <span class="text-green-500">Terms Of Use</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of box-content -->
+      </div>
+      <!-- end of right side -->
+    </div>
+  </body>
+</html>
