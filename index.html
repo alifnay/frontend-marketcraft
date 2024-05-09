@@ -59,20 +59,8 @@
     <!--Body-->
     <!--Banner and Category-->
     <div class="mt-[62px] mx-auto max-w-7xl">
-        <!-- <div class="text-black py-5">
-            <ul class="inline-flex flex-col items-start gap-[16px] font-poppins text-base font-normal">
-                <li>Pottery Craft</li>
-                <li>Wood Craft</li>
-                <li>Textile Craft</li>
-                <li>Leather Craft</li>
-                <li>Accessories</li>
-                <li>Toys</li>
-            </ul>
-        </div> -->
-        <div class="">
-            <div class="rounded-lg">
-                <img src="images\hp_banner.png" alt="" class="w-[1287px] h-auto">
-            </div>
+        <div class="rounded-lg">
+            <img src="images\hp_banner.png" alt="" class="w-[1287px] h-auto">
         </div>
     </div>
 
@@ -83,7 +71,7 @@
             <div class="text-md my-auto ml-[16px] font-semibold">Kategori</div>
         </div>
         <div class="flex justify-between items-center mt-[20px]">
-            <div class="text-2xl font-semibold">Cari berdasarkan kategori</div>
+            <div class="text-3xl font-semibold">Cari berdasarkan kategori</div>
             <div class="flex items-center">
                 <div>
                     <a href="">
@@ -160,7 +148,7 @@
             <div class="text-md my-auto ml-[16px] font-semibold">Bulan ini</div>
         </div>
         <div class="flex justify-between items-center mt-[20px]">
-            <div class="text-2xl font-semibold">Produk paling favorit</div>
+            <div class="text-3xl font-semibold">Produk paling favorit</div>
             <div class="flex items-center">
                 <button class="py-[16px] px-48px bg-black w-[159px] h-[56px] rounded-md">
                     <div class="text-white text-sm">View All</div>
@@ -375,9 +363,72 @@
         </div>
     </div>
 
-    <div class="max-w-7xl mx-auto mt-[112px] h-[500px] bg-black">
-
+    <!--Banner 2-->
+    <div class="max-w-7xl mx-auto mt-[112px] h-[500px] bg-black relative">
+        <div class="grid grid-cols-2 absolute">
+            <div class="pl-14 py-16">
+                <div class="text-[#00FF66] text-2xl font-semibold">Kategori</div>
+                <div class="mt-8 text-white text-5xl font-semibold"> Mainan Pelestari Budaya</div>
+                <div class="mt-8 grid grid-cols-4">
+                    <div class="realtive rounded-full bg-white w-16 h-16 text-center flex flex-col justify-center items-center">
+                        <div class="font-semibold">23</div>
+                        <div class="text-xs">Hours</div>
+                    </div>
+                    <div class="realtive rounded-full bg-white w-16 h-16 text-center flex flex-col justify-center items-center">
+                        <div class="font-semibold">05</div>
+                        <div class="text-xs">Days</div>
+                    </div>
+                    <div class="realtive rounded-full bg-white w-16 h-16 text-center flex flex-col justify-center items-center">
+                        <div class="font-semibold">59</div>
+                        <div class="text-xs">Minutes</div>
+                    </div>
+                    <div class="realtive rounded-full bg-white w-16 h-16 text-center flex flex-col justify-center items-center">
+                        <div class="font-semibold">35</div>
+                        <div class="text-xs">Second</div>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <button class="w-[215px] h-[56px] bg-[#00FF66] rounded-md">
+                        <div class="text-white">Beli Sekarang !</div>
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="rounded-full bg-gray-300 opacity-30 filter blur-[100px] w-[504px] h-[504px]">
+                </div>  
+                <img src="images\wayang_banner.png" alt="" class="absolute top-0 left-0 w-[456px]">
+            </div>            
+        </div>
     </div>
+
+    <!--Our Product-->
+    <div class="max-w-7xl mx-auto mt-[112px]">
+        <div class="flex">
+            <div class="w-[20px] h-[40px] bg-black rounded-md"></div>
+            <div class="text-md my-auto ml-[16px] font-semibold">Produk Kami</div>
+        </div>
+        <div class="flex justify-between items-center mt-[20px]">
+            <div class="text-3xl font-semibold">Cari berdasarkan kategori</div>
+            <div class="flex items-center">
+                <div>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg> 
+                    </a>                    
+                </div>
+                <div>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>  
+                    </a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 
 </body>
 </html>
