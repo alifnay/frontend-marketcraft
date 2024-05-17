@@ -56,8 +56,8 @@
         </div>
     </nav>
 
-    <div class="flex pt-[90px] px-[80px]">
-        <div class="flex flex-col w-[700px] h-[660px] px-[80px] gap-[54px]">
+    <div class="flex max-w-7xl mx-auto pt-[90px] mb-[260px]">
+        <div class="flex flex-col w-[700px] px-[80px] gap-[54px]">
             <div class="grid grid-cols-3 w-[330px] gap-4">
                 <div class="font-medium text-[20px]">Checkout</div>
                 <div class="flex justify-center items-center gap-2">
@@ -96,7 +96,105 @@
                     <div class="pl-[8px] text-[20px] font-semibold">Rp.136.000</div>
                 </div>
             </div>
+            <div class="-mx-[80px] w-[700px] h-[1px] bg-gray-300"></div>
+            <div class="flex justify-end items-center gap-[50px]">
+                <a href="" class="text-[#4A5568] font-medium">Cancel Order</a>
+                <button class="w-[200px] h-[60px] bg-black text-white font-medium rounded-[10px]">Go to Payment</button>
+            </div>
+        </div>
+
+        <div class="flex flex-col px-[110px]">
+            <div class="font-medium text-[20px] mb-[22px]">Ringkasan Belanja</div>
+            <div class="text-gray-400 font-medium mb-[22px]">Gunakan Promo</div>
+            <div class="flex">
+                <button class="w-[270px] h-[60px] bg-[#E2E8F0] rounded-[10px] flex items-center justify-between px-4">
+                    <span></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_308_1256)">
+                            <path d="M12 16L6 10H18L12 16Z" fill="black"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_308_1256">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <button class="ml-[26px] w-[125px] h-[60px] border-2 border-black rounded-[10px] font-medium">
+                    Apply
+                </button>
+            </div>
+            <div class="grid grid-rows-3 mt-[60px] gap-y-[40px]">
+                <div class="grid grid-cols-2 text-[18px] text-[#2D3748]">
+                    <div class="font-medium">Sub total</div>
+                    <div class="text-right">Rp.136.000</div>
+                </div>
+                <div class="grid grid-cols-2 text-[18px] text-[#2D3748]">
+                    <div class="font-medium">Tax</div>
+                    <div class="text-right">Rp.0</div>
+                </div>
+                <div class="grid grid-cols-2 text-[20px] font-medium">
+                    <div>Total</div>
+                    <div class="text-right">Rp.0</div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <footer class="max-w-full">
+        <div class="grid grid-cols-2 gap-0">
+            <div class="w-full h-full">
+                <img class="w-full h-full object-cover" src="images/footer_bg.png" alt="">
+            </div>
+            <div class="w-full h-full">
+                <img class="w-full h-full object-cover" src="images/footer_bg.png" alt="">
+            </div>
+        </div>
+        <div class="bg-[#010006] h-[386px] px-[45px] text-white">
+            <div class="grid grid-cols-5 ">
+                <div class="col-span-3 mt-[28px]">
+                    <div>
+                        <img class="inline-block w-[53px] h-[53px]" src="images\uny_logo.png" alt="">
+                        <img class="inline-block w-[112px] h-[46px] ml-[31px]" src="images\dark_logo.png" alt="">
+                    </div>
+                    <div class="w-[777px] text-justify mt-[37px]">
+                        Uny Craft Market merupakan sebuah aplikasi E-Commerce Marketplace berbasis website yang digunakan untuk menghubungkan para penjual dan pembeli produk kerajinan tangan lokal UNY di Indonesia.   
+                    </div>
+                    <div class="w-[400px] grid grid-cols-4 gap-[50px] mt-[37px]">
+                        <div class="w-[51px] h-[50px]">
+                            <img src="images\fb_footer.png" alt="">
+                        </div>
+                        <div class="w-[51px] h-[50px]">
+                            <img src="images\ig_footer.png" alt="">
+                        </div>
+                        <div class="w-[51px] h-[50px]">
+                            <img src="images\x_footer.png" alt="" class="rounded-full">
+                        </div>
+                        <div class="w-[51px] h-[50px]">
+                            <img src="images\yt_footer.png" alt="" class="rounded-full">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 mt-[54px]">
+                    <div class="w-[350px] mx-auto">
+                        <div class="text-center text-[24px] font-bold mb-[21px]">Contact Us</div>
+                        <div class="flex items-center">
+                            <img src="images\wa_footer.png" alt="" class="rounded-full w-[28px] h-[28px]">
+                            <div class="ml-[15px] text-[20px]">+6288265478956</div>
+                        </div>
+                        <div class="flex items-center mt-[10px]">
+                            <img src="images\gmail_footer.png" alt="" class="rounded-full w-[28px] h-[28px]">
+                            <div class="ml-[15px] text-[20px]">unycraftmarket@gmail.com</div>
+                        </div>
+                        <div class="flex items-center mt-[10px]">
+                            <img src="images\loc_footer.png" alt="" class="rounded-full w-[28px] h-[28px] place-self-start">
+                            <div class="ml-[15px] text-[20px]">Jl. Colombo No.1, Karang Malang, Caturtunggal, Kec. Depok, Kabupaten Sleman, </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-[45px] text-[20px] font-medium">Copyright © 2024. UNYCraft Market All rights reserved.</div>
+        </div>
+    </footer>
 </body>
 </html>
