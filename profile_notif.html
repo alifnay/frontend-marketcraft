@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Payment</title>
+    <title>Profile Notifikasi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 </head>
-
 <body>
+    
     <!--Navbar-->
     <nav class="flex sticky top-0 z-50 w-full h-16" style="background-color: #252525">
         <div class="container mx-auto flex justify-between items-center h-16">
@@ -119,18 +120,18 @@
             </ul>
         </div>
 
-        <div class="ml-[44px] w-[930px] h-auto rounded-[10px] shadow-lg border-2 border-gray-100">
+        <div class="ml-[44px] w-[930px] h-[700px] rounded-[10px] shadow-lg border-2 border-gray-100">
             <div class="grid grid-cols-5 h-[50px] border-b-2 border-gray-100 mb-[36px]">
                 <a href="profile_biodata.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
                     Biodata
                 </a>
-                <a href="" class="flex justify justify-center items-center bg-[#F2F2F2] font-bold text-gray-500">
+                <a href="profile_pay.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
                     Pembayaran
                 </a>
                 <a href="profile_rek.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
                     Rekening Bank
                 </a>
-                <a href="profile_notif.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
+                <a href="" class="flex justify justify-center items-center bg-[#F2F2F2] font-bold text-gray-500">
                     Notifikasi
                 </a>
                 <a href="" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
@@ -139,35 +140,77 @@
             </div>
             <div class="flex mt-[33px] mx-[33px]">
                 <div class="flex flex-col">
-                    <div class="text-[20px] font-semibold text-gray-600">Pengaturan Pembayaran</div>
-                    <div class="mt-[24px] text-[16px] font-semibold text-gray-400">Aturlah metode pembayaran anda pada halaman ini.</div>
-                    <div class="flex flex-col gap-y-[14px] mt-[35px]">
-                        <a href="" class="text-[#DDD400] font-bold">Dana</a>
-                        <div class="w-[400px] h-[1px] bg-gray-200"></div>
-                        <a href="" class="text-gray-600 font-bold">Gopay</a>
-                        <div class="w-[400px] h-[1px] bg-gray-200"></div>
+                    <div class="text-[20px] font-semibold text-gray-600">Notifikasi</div>
+                    <div class="mt-[24px] text-[16px] font-semibold text-gray-400">Aturlah notifkasi yang anda ingin terima.</div>
+                    <div class="mt-[20px] w-[849px] h-[38px] bg-[#D9D9D9] rounded-[10px] flex justify justify-between items-center text-white font-semibold pl-[14px] pr-[21px]">
+                        <div>Transaksi</div>
+                        <div>Email</div>
                     </div>
-                </div>
-                <div class="flex pl-[50px]">
-                    <div class="w-[400px] h-[320px] border-2 rounded-[7px] shadow">
-                        <div class="h-[37px] border-b-2 pl-[16px] flex items-center font-semibold text-gray-600 mb-[14px]">
-                            Dana
+                    <div class="flex justify items-center mt-[20px] mb-[12px]">
+                        <div class="pr-[11px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="gray" viewBox="0 0 24 24" stroke-width="1" stroke="gray" class="w-[26px] h-[26px]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>                              
                         </div>
-                        <div class="flex items-center justify-center">
-                            <div class="flex justify-center w-[364px] h-[187px] rounded-[10px] relative">
-                                <img src="images/dana_bg.jpg" alt="" class="object-cover w-full h-full rounded-[10px]">
-                                <div class="absolute top-[16px] left-[19px] font-semibold text-white">
-                                    <img src="images\dana_logo.png" alt="" class=" w-[61px] h-[61px] bg-white bg-cover bg-center rounded-[10px]">
-                                    <div class="mt-[23px]">USERNAMEDANA1</div>
-                                    <div class="mt-[15px]">08** **** ****</div>
+                        <div class="text-gray-500 font-semibold">Transaksi Pembelian</div>
+                    </div>
+                    <div class="h-[1px] bg-gray-300">
+                        <ul>
+                            <li class="pt-[13px]">
+                                <div class="flex justify justify-between pb-[13px]">
+                                    <div class="text-gray-400 font-semibold">Menunggu Pembayaran</div>
+                                    <div class="pr-[40px]">
+                                        <input type="checkbox" value="" class="w-[26px] h-[26px] text-[#20E100] bg-white border-gray-300 border-2 rounded ">
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="flex justify justify-center mt-[20px]">
-                            <button class="w-[230px] h-[36px] rounded-[7px] border-2 border-gray-300 font-semibold text-gray-500 text-[15px] hover:bg-[#acacac] hover:text-white">
-                                Hapus
-                            </button>
-                        </div>
+                                <div class="h-[1px] bg-gray-300"></div>
+                            </li>
+                            <li class="pt-[13px]">
+                                <div class="flex justify justify-between pb-[13px]">
+                                    <div class="text-gray-400 font-semibold">Menunggu Konfirmasi</div>
+                                    <div class="pr-[40px]">
+                                        <input type="checkbox" value="" class="w-[26px] h-[26px] text-[#20E100] bg-white border-gray-300 border-2 rounded ">
+                                    </div>
+                                </div>
+                                <div class="h-[1px] bg-gray-300"></div>
+                            </li>
+                            <li class="pt-[13px]">
+                                <div class="flex justify justify-between pb-[13px]">
+                                    <div class="text-gray-400 font-semibold">Pesanan Diproses</div>
+                                    <div class="pr-[40px]">
+                                        <input type="checkbox" value="" class="w-[26px] h-[26px] text-[#20E100] bg-white border-gray-300 border-2 rounded ">
+                                    </div>
+                                </div>
+                                <div class="h-[1px] bg-gray-300"></div>
+                            </li>
+                            <li class="pt-[13px]">
+                                <div class="flex justify justify-between pb-[13px]">
+                                    <div class="text-gray-400 font-semibold">Pesanan Dikirim</div>
+                                    <div class="pr-[40px]">
+                                        <input type="checkbox" value="" class="w-[26px] h-[26px] text-[#20E100] bg-white border-gray-300 border-2 rounded ">
+                                    </div>
+                                </div>
+                                <div class="h-[1px] bg-gray-300"></div>
+                            </li>
+                            <li class="pt-[13px]">
+                                <div class="flex justify justify-between pb-[13px]">
+                                    <div class="text-gray-400 font-semibold">Pesanan Selesai</div>
+                                    <div class="pr-[40px]">
+                                        <input type="checkbox" value="" class="w-[26px] h-[26px] text-[#20E100] bg-white border-gray-300 border-2 rounded ">
+                                    </div>
+                                </div>
+                                <div class="h-[1px] bg-gray-300"></div>
+                            </li>
+                            <li class="pt-[13px]">
+                                <div class="flex justify justify-between pb-[13px]">
+                                    <div class="text-gray-400 font-semibold">Pengingat</div>
+                                    <div class="pr-[40px]">
+                                        <input type="checkbox" value="" class="w-[26px] h-[26px] text-[#20E100] bg-white border-gray-300 border-2 rounded ">
+                                    </div>
+                                </div>
+                                <div class="h-[1px] bg-gray-300"></div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
