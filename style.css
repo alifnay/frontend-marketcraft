@@ -7,6 +7,7 @@ body{
     height: 81px;
     flex-shrink: 0;
     background: #252525;
+    font: 1em sans-serif;
 }
 
 .logo{
