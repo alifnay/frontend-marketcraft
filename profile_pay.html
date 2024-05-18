@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Payment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="flex sticky top-0 z-50 w-full h-16" style="background-color: #252525">
+        <div class="container mx-auto flex justify-between items-center h-16">
+        <!-- logo kiri -->
+        <a href="index.html">
+            <img src="Assets\logodark.png" alt="" class="h-10 pl-4 box-content" />
+        </a>
+            <!-- search bar -->
+            <div class="relative w-1/3 flex items-center justify-start rounded-full" style="background-color: #ffff">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute left-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+            <input type="text" class="w-full py-4 pl-10 h-6 placeholder-gray-400 rounded-full" placeholder="Cari di UNY Market" style="background-color: #ffff" />
+            </div>
+            <!-- menu kanan -->
+            <div class="flex items-center">
+            <div class="text-white mr-14" style="color: #fff000">Home</div>
+            <div class="text-white mr-14" style="color: #fff000">Catalog</div>
+            <div class="text-white mr-14" style="color: #fff000">Contact</div>
+        </div>
+        <!-- logo kanan -->
+            <div class="flex items-center pr-20 gap-[19px]">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                        <path d="M22.1933 23.003C21.6806 21.5677 20.5507 20.2994 18.9789 19.3949C17.4071 18.4903 15.4812 18 13.5 18C11.5188 18 9.59295 18.4903 8.02115 19.3949C6.44935 20.2994 5.31944 21.5677 4.80667 23.003" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="13.5" cy="9" r="4.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                        <path d="M5.00701 15.6467L12.8287 22.9944C13.1401 23.2869 13.2958 23.4332 13.4853 23.4388C13.4951 23.4391 13.5049 23.4391 13.5147 23.4388C13.7042 23.4332 13.8599 23.2869 14.1713 22.9944L21.993 15.6467C24.1937 13.5794 24.4609 10.1774 22.61 7.79183L22.262 7.34326C20.0478 4.4894 15.6033 4.96802 14.0475 8.22786C13.8277 8.68833 13.1723 8.68833 12.9525 8.22786C11.3967 4.96802 6.95219 4.4894 4.73799 7.34326L4.38996 7.79183C2.53907 10.1774 2.80631 13.5794 5.00701 15.6467Z" stroke="white" stroke-width="2"/>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                        <path d="M4.5 4.5H6.32884C7.06367 4.5 7.43108 4.5 7.69929 4.70382C7.70622 4.70909 7.71309 4.71445 7.71988 4.7199C7.98267 4.93066 8.07178 5.28711 8.25 6L8.45429 6.81718C8.6132 7.45282 8.69266 7.77064 8.8433 8.02353C9.09915 8.45304 9.50658 8.77115 9.98532 8.91519C10.2672 9 10.5948 9 11.25 9V9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M20.25 19.125H8.49477C8.1749 19.125 8.01496 19.125 7.89611 19.0954C7.42192 18.9775 7.10238 18.5342 7.14047 18.0471C7.15001 17.925 7.20059 17.7732 7.30174 17.4698V17.4698C7.414 17.133 7.47013 16.9646 7.54494 16.8218C7.8371 16.2642 8.37478 15.8766 8.9962 15.7758C9.15532 15.75 9.33281 15.75 9.68779 15.75H15.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.6529 15.75H12.3461C10.7693 15.75 9.9809 15.75 9.42857 15.2986C9.41039 15.2837 9.39248 15.2685 9.37484 15.253C8.83874 14.7824 8.70913 14.0048 8.44991 12.4495C8.18667 10.87 8.05505 10.0803 8.48036 9.55555C8.49404 9.53866 8.5081 9.52207 8.52251 9.50579C8.97022 9 9.77082 9 11.372 9H19.2639C20.7143 9 21.4395 9 21.7326 9.47427C22.0257 9.94854 21.7014 10.5972 21.0528 11.8944L20.2306 13.5389C19.6927 14.6147 19.4237 15.1526 18.9404 15.4513C18.4571 15.75 17.8557 15.75 16.6529 15.75Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="19.125" cy="22.5" r="1.125" fill="white"/>
+                        <circle cx="10.125" cy="22.5" r="1.125" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex mx-auto max-w-7xl pt-[52px] mb-[200px]">
+        <div class="flex flex-col w-[320px]">
+            <div class="flex justify-between items-center">
+                <div class="font-bold">Kelola Akun</div>
+                <div class="ml-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                        <path d="M14.6023 14.2349L8.43772 20.6116L6.67676 18.79L14.6023 10.5918L22.5279 18.79L20.767 20.6116L14.6023 14.2349Z" fill="black"/>
+                    </svg>
+                </div>
+            </div>
+            <ul class="flex flex-col mt-[12px] pl-[32px] gap-y-2">
+                <li class="w-[282px] h-[31px] rounded-[10px] flex items-center bg-[#F2F2F2]">
+                    <a href="" class="w-full h-full flex items-center pl-[11px]">Profile Saya</a>
+                </li>
+                <li class="w-[282px] h-[31px] rounded-[10px] flex items-center hover:bg-[#F2F2F2]">
+                    <a href="" class="w-full h-full flex items-center pl-[11px]">Wishlist Saya</a>
+                </li>
+                <li class="w-[282px] h-[31px] rounded-[10px] flex items-center hover:bg-[#F2F2F2]">
+                    <a href="" class="w-full h-full flex items-center pl-[11px]">Keranjang Saya</a>
+                </li>
+                <li class="w-[282px] h-[31px] rounded-[10px] flex items-center hover:bg-[#F2F2F2]">
+                    <a href="" class="w-full h-full flex items-center pl-[11px]">Pengaturan</a>
+                </li>
+            </ul>
+            <div class="flex justify-between items-center mt-[19px]">
+                <div class="font-bold">Pesanan Saya</div>
+                <div class="ml-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                        <path d="M14.6023 14.2349L8.43772 20.6116L6.67676 18.79L14.6023 10.5918L22.5279 18.79L20.767 20.6116L14.6023 14.2349Z" fill="black"/>
+                    </svg>
+                </div>
+            </div>
+            <ul class="flex flex-col mt-[12px] pl-[32px] gap-y-2">
+                <li class="w-[282px] h-[31px] rounded-[10px] flex items-center hover:bg-[#F2F2F2]">
+                    <a href="" class="w-full h-full flex items-center pl-[11px]">Menunggu Pembayaran</a>
+                </li>
+                <li class="w-[282px] h-[31px] rounded-[10px] flex items-center hover:bg-[#F2F2F2]">
+                    <a href="" class="w-full h-full flex items-center pl-[11px]">Daftar Transaksi</a>
+                </li>
+            </ul>
+            <div class="flex justify-between items-center mt-[19px]">
+                <div class="font-bold">Kotak Masuk</div>
+                <div class="ml-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                        <path d="M14.6023 14.2349L8.43772 20.6116L6.67676 18.79L14.6023 10.5918L22.5279 18.79L20.767 20.6116L14.6023 14.2349Z" fill="black"/>
+                    </svg>
+                </div>
+            </div>
+            <ul class="flex flex-col mt-[12px] pl-[32px] gap-y-2">
+                <li class="w-[282px] h-[31px] rounded-[10px] flex items-center hover:bg-[#F2F2F2]">
+                    <a href="" class="w-full h-full flex items-center pl-[11px]">Chat</a>
+                </li>
+                <li class="w-[282px] h-[31px] rounded-[10px] flex items-center hover:bg-[#F2F2F2]">
+                    <a href="" class="w-full h-full flex items-center pl-[11px]">Ulasan</a>
+                </li>
+                <li class="w-[282px] h-[31px] rounded-[10px] flex items-center hover:bg-[#F2F2F2]">
+                    <a href="" class="w-full h-full flex items-center pl-[11px]">Pesanan Dikomplain</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="ml-[44px] w-[930px] h-auto rounded-[10px] shadow-lg border-2 border-gray-100">
+            <div class="grid grid-cols-5 h-[50px] border-b-2 border-gray-100 mb-[36px]">
+                <a href="" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
+                    Biodata
+                </a>
+                <a href="" class="flex justify justify-center items-center bg-[#F2F2F2] font-bold text-gray-500">
+                    Pembayaran
+                </a>
+                <a href="" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
+                    Rekening Bank
+                </a>
+                <a href="" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
+                    Notifikasi
+                </a>
+                <a href="" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
+                    Keamanan
+                </a>
+            </div>
+            <div class="flex mt-[33px] mx-[33px]">
+                <div class="flex flex-col">
+                    <div class="text-[20px] font-semibold text-gray-600">Pengaturan Pembayaran</div>
+                    <div class="mt-[24px] text-[16px] font-semibold text-gray-400">Aturlah metode pembayaran anda pada halaman ini.</div>
+                    <div class="flex flex-col gap-y-[14px] mt-[35px]">
+                        <a href="" class="text-[#DDD400] font-bold">Dana</a>
+                        <div class="w-[400px] h-[1px] bg-gray-200"></div>
+                        <a href="" class="text-gray-600 font-bold">Gopay</a>
+                        <div class="w-[400px] h-[1px] bg-gray-200"></div>
+                    </div>
+                </div>
+                <div class="flex pl-[50px]">
+                    <div class="w-[400px] h-[320px] border-2 rounded-[7px] shadow">
+                        <div class="h-[37px] border-b-2 pl-[16px] flex items-center font-semibold text-gray-600 mb-[14px]">
+                            Dana
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <div class="flex justify-center w-[364px] h-[187px] rounded-[10px] relative">
+                                <img src="images/dana_bg.jpg" alt="" class="object-cover w-full h-full rounded-[10px]">
+                                <div class="absolute top-[16px] left-[19px] font-semibold text-white">
+                                    <img src="images\dana_logo.png" alt="" class=" w-[61px] h-[61px] bg-white bg-cover bg-center rounded-[10px]">
+                                    <div class="mt-[23px]">USERNAMEDANA1</div>
+                                    <div class="mt-[15px]">08** **** ****</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify justify-center mt-[20px]">
+                            <button class="w-[230px] h-[36px] rounded-[7px] border-2 border-gray-300 font-semibold text-gray-500 text-[15px] hover:bg-[#acacac] hover:text-white">
+                                Hapus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="max-w-full">
+        <div class="grid grid-cols-2 gap-0">
+            <div class="w-full h-full">
+                <img class="w-full h-full object-cover" src="images/footer_bg.png" alt="">
+            </div>
+            <div class="w-full h-full">
+                <img class="w-full h-full object-cover" src="images/footer_bg.png" alt="">
+            </div>
+        </div>
+        <div class="bg-[#010006] h-[386px] px-[45px] text-white">
+            <div class="grid grid-cols-5 ">
+                <div class="col-span-3 mt-[28px]">
+                    <div>
+                        <img class="inline-block w-[53px] h-[53px]" src="images\uny_logo.png" alt="">
+                        <img class="inline-block w-[112px] h-[46px] ml-[31px]" src="images\dark_logo.png" alt="">
+                    </div>
+                    <div class="w-[777px] text-justify mt-[37px]">
+                        Uny Craft Market merupakan sebuah aplikasi E-Commerce Marketplace berbasis website yang digunakan untuk menghubungkan para penjual dan pembeli produk kerajinan tangan lokal UNY di Indonesia.   
+                    </div>
+                    <div class="w-[400px] grid grid-cols-4 gap-[50px] mt-[37px]">
+                        <div class="w-[51px] h-[50px]">
+                            <img src="images\fb_footer.png" alt="">
+                        </div>
+                        <div class="w-[51px] h-[50px]">
+                            <img src="images\ig_footer.png" alt="">
+                        </div>
+                        <div class="w-[51px] h-[50px]">
+                            <img src="images\x_footer.png" alt="" class="rounded-full">
+                        </div>
+                        <div class="w-[51px] h-[50px]">
+                            <img src="images\yt_footer.png" alt="" class="rounded-full">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 mt-[54px]">
+                    <div class="w-[350px] mx-auto">
+                        <div class="text-center text-[24px] font-bold mb-[21px]">Contact Us</div>
+                        <div class="flex items-center">
+                            <img src="images\wa_footer.png" alt="" class="rounded-full w-[28px] h-[28px]">
+                            <div class="ml-[15px] text-[20px]">+6288265478956</div>
+                        </div>
+                        <div class="flex items-center mt-[10px]">
+                            <img src="images\gmail_footer.png" alt="" class="rounded-full w-[28px] h-[28px]">
+                            <div class="ml-[15px] text-[20px]">unycraftmarket@gmail.com</div>
+                        </div>
+                        <div class="flex items-center mt-[10px]">
+                            <img src="images\loc_footer.png" alt="" class="rounded-full w-[28px] h-[28px] place-self-start">
+                            <div class="ml-[15px] text-[20px]">Jl. Colombo No.1, Karang Malang, Caturtunggal, Kec. Depok, Kabupaten Sleman, </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-[45px] text-[20px] font-medium">Copyright © 2024. UNYCraft Market All rights reserved.</div>
+        </div>
+    </footer>
+
+</body>
+</html>
