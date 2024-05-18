@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Payment</title>
+    <title>Profile Notifikasi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
 
+</head>
 <body>
     <!--Navbar-->
     <nav class="flex sticky top-0 z-50 w-full h-16" style="background-color: #252525">
@@ -119,18 +119,18 @@
             </ul>
         </div>
 
-        <div class="ml-[44px] w-[930px] h-auto rounded-[10px] shadow-lg border-2 border-gray-100">
+        <div class="ml-[44px] w-[930px] h-[631px] rounded-[10px] shadow-lg border-2 border-gray-100">
             <div class="grid grid-cols-5 h-[50px] border-b-2 border-gray-100 mb-[36px]">
                 <a href="profile_biodata.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
                     Biodata
                 </a>
-                <a href="" class="flex justify justify-center items-center bg-[#F2F2F2] font-bold text-gray-500">
+                <a href="profile_pay.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
                     Pembayaran
                 </a>
                 <a href="profile_rek.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
                     Rekening Bank
                 </a>
-                <a href="profile_notif.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
+                <a href="" class="flex justify justify-center items-center bg-[#F2F2F2] font-bold text-gray-500">
                     Notifikasi
                 </a>
                 <a href="" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
@@ -139,96 +139,18 @@
             </div>
             <div class="flex mt-[33px] mx-[33px]">
                 <div class="flex flex-col">
-                    <div class="text-[20px] font-semibold text-gray-600">Pengaturan Pembayaran</div>
-                    <div class="mt-[24px] text-[16px] font-semibold text-gray-400">Aturlah metode pembayaran anda pada halaman ini.</div>
-                    <div class="flex flex-col gap-y-[14px] mt-[35px]">
-                        <a href="" class="text-[#DDD400] font-bold">Dana</a>
-                        <div class="w-[400px] h-[1px] bg-gray-200"></div>
-                        <a href="" class="text-gray-600 font-bold">Gopay</a>
-                        <div class="w-[400px] h-[1px] bg-gray-200"></div>
-                    </div>
-                </div>
-                <div class="flex pl-[50px]">
-                    <div class="w-[400px] h-[320px] border-2 rounded-[7px] shadow">
-                        <div class="h-[37px] border-b-2 pl-[16px] flex items-center font-semibold text-gray-600 mb-[14px]">
-                            Dana
-                        </div>
-                        <div class="flex items-center justify-center">
-                            <div class="flex justify-center w-[364px] h-[187px] rounded-[10px] relative">
-                                <img src="images/dana_bg.jpg" alt="" class="object-cover w-full h-full rounded-[10px]">
-                                <div class="absolute top-[16px] left-[19px] font-semibold text-white">
-                                    <img src="images\dana_logo.png" alt="" class=" w-[61px] h-[61px] bg-white bg-cover bg-center rounded-[10px]">
-                                    <div class="mt-[23px]">USERNAMEDANA1</div>
-                                    <div class="mt-[15px]">08** **** ****</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex justify justify-center mt-[20px]">
-                            <button class="w-[230px] h-[36px] rounded-[7px] border-2 border-gray-300 font-semibold text-gray-500 text-[15px] hover:bg-[#acacac] hover:text-white">
-                                Hapus
-                            </button>
-                        </div>
+                    <div class="text-[20px] font-semibold text-gray-600">Notifikasi</div>
+                    <div class="mt-[24px] text-[16px] font-semibold text-gray-400">Aturlah notifkasi yang anda ingin terima.</div>
+                    <div class="mt-[20px] w-[849px] h-[38px] bg-[#D9D9D9] rounded-[10px]"></div>
+                    <div>
+                        <ul>
+                            
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <footer class="max-w-full">
-        <div class="grid grid-cols-2 gap-0">
-            <div class="w-full h-full">
-                <img class="w-full h-full object-cover" src="images/footer_bg.png" alt="">
-            </div>
-            <div class="w-full h-full">
-                <img class="w-full h-full object-cover" src="images/footer_bg.png" alt="">
-            </div>
-        </div>
-        <div class="bg-[#010006] h-[386px] px-[45px] text-white">
-            <div class="grid grid-cols-5 ">
-                <div class="col-span-3 mt-[28px]">
-                    <div>
-                        <img class="inline-block w-[53px] h-[53px]" src="images\uny_logo.png" alt="">
-                        <img class="inline-block w-[112px] h-[46px] ml-[31px]" src="images\dark_logo.png" alt="">
-                    </div>
-                    <div class="w-[777px] text-justify mt-[37px]">
-                        Uny Craft Market merupakan sebuah aplikasi E-Commerce Marketplace berbasis website yang digunakan untuk menghubungkan para penjual dan pembeli produk kerajinan tangan lokal UNY di Indonesia.   
-                    </div>
-                    <div class="w-[400px] grid grid-cols-4 gap-[50px] mt-[37px]">
-                        <div class="w-[51px] h-[50px]">
-                            <img src="images\fb_footer.png" alt="">
-                        </div>
-                        <div class="w-[51px] h-[50px]">
-                            <img src="images\ig_footer.png" alt="">
-                        </div>
-                        <div class="w-[51px] h-[50px]">
-                            <img src="images\x_footer.png" alt="" class="rounded-full">
-                        </div>
-                        <div class="w-[51px] h-[50px]">
-                            <img src="images\yt_footer.png" alt="" class="rounded-full">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-2 mt-[54px]">
-                    <div class="w-[350px] mx-auto">
-                        <div class="text-center text-[24px] font-bold mb-[21px]">Contact Us</div>
-                        <div class="flex items-center">
-                            <img src="images\wa_footer.png" alt="" class="rounded-full w-[28px] h-[28px]">
-                            <div class="ml-[15px] text-[20px]">+6288265478956</div>
-                        </div>
-                        <div class="flex items-center mt-[10px]">
-                            <img src="images\gmail_footer.png" alt="" class="rounded-full w-[28px] h-[28px]">
-                            <div class="ml-[15px] text-[20px]">unycraftmarket@gmail.com</div>
-                        </div>
-                        <div class="flex items-center mt-[10px]">
-                            <img src="images\loc_footer.png" alt="" class="rounded-full w-[28px] h-[28px] place-self-start">
-                            <div class="ml-[15px] text-[20px]">Jl. Colombo No.1, Karang Malang, Caturtunggal, Kec. Depok, Kabupaten Sleman, </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-[45px] text-[20px] font-medium">Copyright © 2024. UNYCraft Market All rights reserved.</div>
-        </div>
-    </footer>
 
 </body>
 </html>
