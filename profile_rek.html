@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Payment</title>
+    <title>Profile Rekening</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <!--Navbar-->
     <nav class="flex sticky top-0 z-50 w-full h-16" style="background-color: #252525">
@@ -124,10 +123,10 @@
                 <a href="profile_biodata.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
                     Biodata
                 </a>
-                <a href="" class="flex justify justify-center items-center bg-[#F2F2F2] font-bold text-gray-500">
+                <a href="profile_pay.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
                     Pembayaran
                 </a>
-                <a href="profile_rek.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
+                <a href="" class="flex justify justify-center items-center bg-[#F2F2F2] font-bold text-gray-500">
                     Rekening Bank
                 </a>
                 <a href="" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
@@ -139,35 +138,32 @@
             </div>
             <div class="flex mt-[33px] mx-[33px]">
                 <div class="flex flex-col">
-                    <div class="text-[20px] font-semibold text-gray-600">Pengaturan Pembayaran</div>
-                    <div class="mt-[24px] text-[16px] font-semibold text-gray-400">Aturlah metode pembayaran anda pada halaman ini.</div>
-                    <div class="flex flex-col gap-y-[14px] mt-[35px]">
-                        <a href="" class="text-[#DDD400] font-bold">Dana</a>
-                        <div class="w-[400px] h-[1px] bg-gray-200"></div>
-                        <a href="" class="text-gray-600 font-bold">Gopay</a>
-                        <div class="w-[400px] h-[1px] bg-gray-200"></div>
+                    <div class="text-[20px] font-semibold text-gray-600">Rekening Bank</div>
+                    <div class="mt-[24px] text-[16px] font-semibold text-gray-400 text-justify">
+                        Anda hanya bisa menyimpan 3 (tiga) rekening bank yang dapat ditarik jika anda membeli barang dan dimasukkan dana jika barang yang anda jual telah sampai kepada pembeli
                     </div>
                 </div>
-                <div class="flex pl-[50px]">
-                    <div class="w-[400px] h-[320px] border-2 rounded-[7px] shadow">
-                        <div class="h-[37px] border-b-2 pl-[16px] flex items-center font-semibold text-gray-600 mb-[14px]">
-                            Dana
+                <div class="pl-[158px] pt-[93px]">
+                    <button class="w-[230px] h-[36px] bg-gray-200 rounded-[7px] font-semibold text-[15px] text-gray-600 hover:bg-gray-600 hover:text-white">
+                        Tambahkan Rekening Lain
+                    </button>
+                </div>
+            </div>
+            <div class="w-[849px] h-[130px] rounded-[10px] mt-[33px] ml-[34px] relative">
+                <img src="images\BGKartuDana.png" alt="" class="absolute object-cover w-full h-full rounded-[10px]">
+                <div class="flex absolute top-[18px] left-[24px]">
+                    <div class="flex">
+                        <div class="w-[94px] h-[94px] bg-white rounded-[10px] flex items-center justify-center">
+                            <img src="images/bni_logo.png" alt="" class="w-[82px] h-[25px]">
                         </div>
-                        <div class="flex items-center justify-center">
-                            <div class="flex justify-center w-[364px] h-[187px] rounded-[10px] relative">
-                                <img src="images/dana_bg.jpg" alt="" class="object-cover w-full h-full rounded-[10px]">
-                                <div class="absolute top-[16px] left-[19px] font-semibold text-white">
-                                    <img src="images\dana_logo.png" alt="" class=" w-[61px] h-[61px] bg-white bg-cover bg-center rounded-[10px]">
-                                    <div class="mt-[23px]">USERNAMEDANA1</div>
-                                    <div class="mt-[15px]">08** **** ****</div>
-                                </div>
-                            </div>
+                        <div class="ml-[16px] flex flex-col justify-center font-semibold text-white gap-y-[11px]">
+                            <div>PT. BANK NEGARA INDONESIA (BNI) (PERSERO)</div>
+                            <div>09********</div>
+                            <div>a.n UserSatu</div>
                         </div>
-                        <div class="flex justify justify-center mt-[20px]">
-                            <button class="w-[230px] h-[36px] rounded-[7px] border-2 border-gray-300 font-semibold text-gray-500 text-[15px] hover:bg-[#acacac] hover:text-white">
-                                Hapus
-                            </button>
-                        </div>
+                    </div>
+                    <div class="ml-[200px] flex justify justify-center items-center">
+                        <button class="w-[107px] h-[36px] bg-white rounded-[10px] font-semibold text-gray-600 text-[15px]"> Hapus</button>
                     </div>
                 </div>
             </div>
