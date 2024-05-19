@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Product Detail</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <title>Cart_Page UNYCraft</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
   </head>
   <body>
-    <!-- Nav Bar -->
-    <nav class="sticky top-0 w-full h-16 z-50" style="background-color: #252525">
+    <!--Navbar-->
+    <nav class="flex sticky top-0 z-50 w-full h-16" style="background-color: #252525">
       <div class="container mx-auto flex justify-between items-center h-16">
         <!-- logo kiri -->
         <a href="index.html">
@@ -23,7 +29,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute left-2">
             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
           </svg>
-          <input type="text" class="w-full py-4 pl-10 h-6 placeholder-gray -300 rounded-full" placeholder="Cari di UNY Market" style="background-color: #ffff" />
+          <input type="text" class="w-full py-4 pl-10 h-6 placeholder-gray-400 rounded-full" placeholder="Cari di UNY Market" style="background-color: #ffff" />
         </div>
         <!-- menu kanan -->
         <div class="flex items-center">
@@ -32,211 +38,209 @@
           <div class="text-white mr-14" style="color: #fff000">Contact</div>
         </div>
         <!-- logo kanan -->
-        <div class="flex items-center pr-20">
-          <img src="Assets\user.png" alt="" class="mr-7" />
-          <img src="Assets\Favorite.png" alt="" class="mr-7" />
-          <img src="Assets\Basket_alt_3.png" alt="" class="mr-7" />
+        <div class="flex items-center pr-20 gap-[19px]">
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+              <path
+                d="M22.1933 23.003C21.6806 21.5677 20.5507 20.2994 18.9789 19.3949C17.4071 18.4903 15.4812 18 13.5 18C11.5188 18 9.59295 18.4903 8.02115 19.3949C6.44935 20.2994 5.31944 21.5677 4.80667 23.003"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <circle cx="13.5" cy="9" r="4.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </a>
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+              <path
+                d="M5.00701 15.6467L12.8287 22.9944C13.1401 23.2869 13.2958 23.4332 13.4853 23.4388C13.4951 23.4391 13.5049 23.4391 13.5147 23.4388C13.7042 23.4332 13.8599 23.2869 14.1713 22.9944L21.993 15.6467C24.1937 13.5794 24.4609 10.1774 22.61 7.79183L22.262 7.34326C20.0478 4.4894 15.6033 4.96802 14.0475 8.22786C13.8277 8.68833 13.1723 8.68833 12.9525 8.22786C11.3967 4.96802 6.95219 4.4894 4.73799 7.34326L4.38996 7.79183C2.53907 10.1774 2.80631 13.5794 5.00701 15.6467Z"
+                stroke="white"
+                stroke-width="2"
+              />
+            </svg>
+          </a>
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+              <path
+                d="M4.5 4.5H6.32884C7.06367 4.5 7.43108 4.5 7.69929 4.70382C7.70622 4.70909 7.71309 4.71445 7.71988 4.7199C7.98267 4.93066 8.07178 5.28711 8.25 6L8.45429 6.81718C8.6132 7.45282 8.69266 7.77064 8.8433 8.02353C9.09915 8.45304 9.50658 8.77115 9.98532 8.91519C10.2672 9 10.5948 9 11.25 9V9"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20.25 19.125H8.49477C8.1749 19.125 8.01496 19.125 7.89611 19.0954C7.42192 18.9775 7.10238 18.5342 7.14047 18.0471C7.15001 17.925 7.20059 17.7732 7.30174 17.4698V17.4698C7.414 17.133 7.47013 16.9646 7.54494 16.8218C7.8371 16.2642 8.37478 15.8766 8.9962 15.7758C9.15532 15.75 9.33281 15.75 9.68779 15.75H15.75"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16.6529 15.75H12.3461C10.7693 15.75 9.9809 15.75 9.42857 15.2986C9.41039 15.2837 9.39248 15.2685 9.37484 15.253C8.83874 14.7824 8.70913 14.0048 8.44991 12.4495C8.18667 10.87 8.05505 10.0803 8.48036 9.55555C8.49404 9.53866 8.5081 9.52207 8.52251 9.50579C8.97022 9 9.77082 9 11.372 9H19.2639C20.7143 9 21.4395 9 21.7326 9.47427C22.0257 9.94854 21.7014 10.5972 21.0528 11.8944L20.2306 13.5389C19.6927 14.6147 19.4237 15.1526 18.9404 15.4513C18.4571 15.75 17.8557 15.75 16.6529 15.75Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <circle cx="19.125" cy="22.5" r="1.125" fill="white" />
+              <circle cx="10.125" cy="22.5" r="1.125" fill="white" />
+            </svg>
+          </a>
         </div>
       </div>
     </nav>
 
-    <!-- Main Content -->
-
-    <div class="container h-full w-11/12 mx-auto mt-10">
-      <!-- wrapper -->
-
-      <!-- roadmap -->
-      <div>
-        <div class="flex items-center mb-14">
-          <div class="text-gray-400 mr-3 hover:text-black cursor-pointer">Account</div>
-          <div class="text-gray-400 mr-3">/</div>
-          <div class="text-gray-400 mr-3 hover:text-black cursor-pointer">Leather Craft</div>
-          <div class="text-gray-400 mr-3">/</div>
-          <div class="text-gray-400 mr-3 hover:text-black cursor-pointer">Tas Selempang Kulit Super</div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-8 gap-24" style="height: 480px">
-        <!-- product detail -->
-
-        <div class="col-span-5">
-          <!-- left-side-->
-          <div class="grid grid-cols-4 h-full w-full">
-            <div class="col-span-1">
-              <div class="grid gap-4 h-full grid-cols-1 gap-5">
-                <div class="flex justify-center items-center bg-gray-100 w-full">
-                  <img src="Assets\tas belakang 1.png" alt="" class="w-28 h-28" />
-                </div>
-                <div class="flex justify-center items-center bg-gray-100 w-full">
-                  <img src="Assets\tas samping 1.png" alt="" class="w-28 h-28" />
-                </div>
-                <div class="flex justify-center items-center bg-gray-100 w-full">
-                  <img src="Assets\tas atas 1.png" alt="" class="w-28 h-28" />
-                </div>
-                <div class="flex justify-center items-center bg-gray-100 w-full">
-                  <img src="Assets\ukuran 1.png" alt="" class="w-28 h-28" />
-                </div>
-              </div>
+    <div class="flex max-w-7xl mx-auto pt-[90px] mb-[0px]" >
+    <div class="flex flex-col w-[800px] pr-[80px] gap-4 ">
+        <div class="font-medium text-[20px]">Keranjang Belanja</div>
+         <div class="w-full h-[80px]  rounded-t-[10px] bg-[#F0F0F0] flex items-center justify-between px-4">
+            <div class="flex items-center ">
+                <div class="inline-flex items-center">
+                <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="check">
+                    <input type="checkbox"
+                    class=" peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-500 transition-all checked:border-[#20E100] checked:bg-[#20E100] checked:before:bg-gray-900 hover:before:opacity-10"
+                    id="check" />
+                    <span
+                    class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
+                        stroke="currentColor" stroke-width="1">
+                        <path fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                    </span>
+                </label>
+                <label class="mt-px font-semibold text-gray-700 cursor-pointer select-none " htmlFor="check">
+                    Pilih Semua 
+                    <span> (x) </span>
+                </label>
+                </div> 
             </div>
-            <div class="bg-gray-100 col-span-3 ml-10">
-              <div class="flex justify-center items-center h-full w-full">
-                <img src="Assets\tas depan 1.png" alt="" class="" />
-              </div>
-            </div>
-          </div>
-        </div>
+         </div>
+         <div class="w-full h-full bg-[#F0F0F0] rounded-b-[10px] flex flex-col ">
+              <div class="inline-flex items-center ml-4 mt-2 ">
+                <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="check">
+                    <input type="checkbox"
+                    class=" peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-500 transition-all checked:border-[#20E100] checked:bg-[#20E100] checked:before:bg-gray-900 hover:before:opacity-10"
+                    id="check" />
+                    <span
+                    class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
+                        stroke="currentColor" stroke-width="1">
+                        <path fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                    </span>
+                </label>
+                <label class="mt-px font-semibold text-gray-700 cursor-pointer select-none " htmlFor="check">
+                    Andrea Paleka
+                </label>
+              </div> 
 
-        <div class="flex flex-col w-full col-span-3">
-          <!-- right-side -->
-          <div product-id="1" class="text-3xl font-bold leading-6 tracking-wide">Tas Selempang Kulit Super</div>
-
-          <div class="flex items-center pt-4 pb-4">
-            <!-- ratings stars -->
-            <svg class="w-4 h-4 mr-1 text-yellow-500 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path
-                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-              />
-            </svg>
-            <svg class="w-4 h-4 mr-1 text-yellow-500 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path
-                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-              />
-            </svg>
-            <svg class="w-4 h-4 mr-1 text-yellow-500 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path
-                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-              />
-            </svg>
-            <svg class="w-4 h-4 mr-1 text-yellow-500 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path
-                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-              />
-            </svg>
-            <svg class="w-4 h-4 ms-1 mr-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path
-                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-              />
-            </svg>
-            <span class="ml-2 mb-px text-sm font-normal leading-6 text-black opacity-50">(88 reviews)</span>
-            <span class="ml-3 mr-3 mb-px text-sm font-normal leading-6 text-black opacity-50">|</span>
-            <span class="text-base mb-px font-normal leading-6" style="color: #0f6"> In Stock</span>
-          </div>
-
-          <!-- harga -->
-          <div class="font-inter font-semibold text-2xl leading-none">Rp.136.000</div>
-
-          <!-- deskripsi -->
-          <div class="pt-6 font-poppins text-base font-normal leading-6">Tas Selempang Kulit Sapi dengan bahan berkualitas super dijamin awet, keren ,Trendy</div>
-
-          <!-- garis -->
-          <div class="flex w-400 h-px justify-center items-center flex-shrink-0 bg-gray-400 mt-6"></div>
-
-          <!-- color -->
-          <div class="flex items-center mt-4">
-            <div class="font-inter font-medium text-base leading-none mb-px">Colours :</div>
-            <svg class="w-5 h-5 ml-4" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="10" cy="10" r="6" class="fill-current" style="color: #a46752" />
-              <circle cx="10" cy="10" r="9" class="stroke-current text-black stroke-2" />
-            </svg>
-          </div>
-
-          <!-- size -->
-          <div class="flex items-center mt-4">
-            <div class="font-inter font-medium text-base leading-none">Size :</div>
-            <button class="w-8 h-8 ml-6 border border-black border-opacity-50 bg-white hover:bg-black hover:text-white text-black font-semibold rounded-md shadow-md">XS</button>
-            <button class="w-8 h-8 ml-4 border border-black border-opacity-50 bg-white hover:bg-black hover:text-white text-black font-semibold rounded-md shadow-md">S</button>
-            <button class="w-8 h-8 ml-4 border border-black border-opacity-50 bg-white hover:bg-black hover:text-white text-black font-semibold rounded-md shadow-md">M</button>
-            <button class="w-8 h-8 ml-4 border border-black border-opacity-50 bg-white hover:bg-black hover:text-white text-black font-semibold rounded-md shadow-md">L</button>
-            <button class="w-8 h-8 ml-4 border border-black border-opacity-50 bg-white hover:bg-black hover:text-white text-black font-semibold rounded-md shadow-md">XL</button>
-          </div>
-
-          <!-- jumlah barang -->
-
-          <div class="flex items center mt-6">
-            <div x-data="{ currentVal: 1, minVal: 0, maxVal: 10, decimalPoints: 0, incrementAmount: 1 }" class="flex flex-col gap-1">
-              <div @dblclick.prevent class="flex items-center">
-                <button
-                  @click="currentVal = Math.max(minVal, currentVal - incrementAmount)"
-                  class="flex h-10 items-center justify-center rounded-l-xl border border-black border-opacity-50 bg-white px-4 py-2 text-black hover:bg-black hover:text-white font-semibold"
-                  aria-label="subtract"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="2" class="size-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
-                  </svg>
-                </button>
-                <input x-model="currentVal.toFixed(decimalPoints)" id="counterInput" type="text" class="border-px h-10 w-20 rounded-none border border-opacity-50 border-black bg-white text-center text-black " readonly />
-                <button
-                  @click="currentVal = Math.min(maxVal, currentVal + incrementAmount)"
-                  class="flex h-10 items-center justify-center rounded-r-xl border border-black border-opacity-50 bg-white px-4 py-2 text-slate-700 hover:bg-black hover:text-white font-semibold"
-                  aria-label="add"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="2" class="size-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <button class="w-40 h-10 ml-4 border border-black border-opacity-50 bg-black hover:bg-white hover:text-black text-white font-semibold rounded-md shadow-md">Buy Now</button>
-            <div class="w-10 h-10 ml-4 justify-center items-center inline-flex items-center border-black"> 
-              
-            
-            <label
-              class="relative flex items-center p-3 rounded-full cursor-pointer"
-              htmlFor="custom"
-              >
-              <input
-                type="checkbox"
-                class="peer relative appearance-none w-10 h-10 border rounded-md border-black cursor-pointer transition-all checked:bg-gray-900 checked:border-gray-900 checked:before:bg-gray-900"
-                id="custom"
-                /><span
-                class="absolute text-white  transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                    clip-rule="evenodd"
-                  ></path></svg></span
-            ></label>
-            </div>
-          </div>
-          <!-- Delivery -->
-          <div class="flex flex-col mt-4">
-            <div class="w-full h-[70px] border-2 border-gray-400 rounded-t-md">
-              <div class="grid grid-cols-5 h-full">
-                <div class="col-span-1 flex items-center justify-center">
-                  <img src="Assets\icon-delivery.png" alt="" class="" />
+              <div class="flex h-full">
+                <div class="ml-4 mt-2 ">
+                <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="check">
+                    <input type="checkbox"
+                    class=" peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-500 transition-all checked:border-[#20E100] checked:bg-[#20E100] checked:before:bg-gray-900 hover:before:opacity-10"
+                    id="check" />
+                    <span
+                    class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
+                        stroke="currentColor" stroke-width="1">
+                        <path fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                    </span>
+                </label>
+              </div> 
+              <div class="flex w-full h-full pb-3 pt-5">
+                
+                <div class="w-auto px-[20px] h-auto bg-white border-2 border-gray-300 rounded-md">
+                  <img src="Assets\tas depan 1.png" alt="" class="h-[150px] w-[190px]">
                 </div>
-                <div class="col-span-4 flex flex-col justify-center">
-                  <div class="text-sm font-bold">Free Delivery</div>
-                  <a href="" class="text-xs font-semibold underline"> Enter your postal code for Delivery Availability</a>
-                </div>
-              </div>
-            </div>
-            <div class="w-full h-[70px] border-2 border-t-0 border-gray-400 rounded-b-md">
-              <div class="grid grid-cols-5 h-full">
-                <div class="col-span-1 flex items-center justify-center">
-                  <img src="Assets\Icon-return.png" alt="" class="" />
-                </div>
-                <div class="col-span-4 flex flex-col justify-center">
-                  <div class="text-sm font-bold">Return Delivery</div>
-                  <div class="text-xs font-semibold">
-                    Free 30 Days Delivery Returns. <span class="underline"> <a href="">Details</a> </span>
+                <div class="h-full w-full px-[20px] flex flex-col gap-4 gap-end-0">
+                  <div class="grid grid-cols-2 gap-4 pt-2">
+                    <span class="text-yellow-500  font-normal self-start">Sisa 5</span>
+                    <span class="text-right  font-normal ">Rp.136.600</span>
+                  </div>
+                  <div class="font-semibold">Tas Selempang Kulit Super</div>
+                  <div class="flex-grow"></div> <!-- Penambahan flex-grow untuk memberikan ruang kosong pada bagian bawah -->
+                  <div class="self-end pb-2  flex"> <!-- Penempatan pada bagian bawah kontainer -->
+                    <div>
+                    </div>
+                    <div x-data="{ currentVal: 1, minVal: 0, maxVal: 10, decimalPoints: 0, incrementAmount: 1 }" class="flex flex-col gap-1">
+                      <div @dblclick.prevent class="flex items-center">
+                        <button
+                          @click="currentVal = Math.max(minVal, currentVal - incrementAmount)"
+                          class="flex h-10 items-center justify-center rounded-l-xl border border-black border-r-0 border-opacity-50 bg-white px-4 py-2 text-black hover:bg-gray-300 hover:text-white font-semibold"
+                          aria-label="subtract"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="2" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                          </svg>
+                        </button>
+                        <input x-model="currentVal.toFixed(decimalPoints)" id="counterInput" type="text" class="border-px h-10 w-20 border-x-0 rounded-none border border-opacity-50 border-black bg-white text-center text-black " readonly />
+                        <button
+                          @click="currentVal = Math.min(maxVal, currentVal + incrementAmount)"
+                          class="flex h-10 items-center justify-center rounded-r-xl border border-black border-l-0 border-opacity-50 bg-white px-4 py-2 text-slate-700 hover:bg-gray-300 hover:text-white font-semibold"
+                          aria-label="add"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="2" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
+
+
+                
               </div>
-            </div>
+              </div>
+              
+         </div>
+      </div>
+
+      <div class="flex flex-col w-2/7 ">
+        <div class="font-medium text-[20px] mb-[22px]">Ringkasan Belanja</div>
+        <div class="text-gray-400 font-medium mb-[22px]">Gunakan Promo</div>
+        <div class="flex">
+          <button class="w-[270px] h-[60px] bg-[#E2E8F0] rounded-[10px] flex items-center justify-between px-4">
+            <span class="text-gray-600"></span>
+            <!-- Text atau konten lainnya di sini -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="order-last">
+              <g clip-path="url(#clip0_308_1256)">
+                <path d="M12 16L6 10H18L12 16Z" fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_308_1256">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button class="ml-[26px] w-[125px] h-[60px] border-2 border-black hover:bg-black hover:text-white rounded-[10px] font-medium">Apply</button>
+        </div>
+        <div class="grid grid-rows-3 mt-[60px] gap-y-[40px]">
+          <div class="grid grid-cols-2 text-[18px] text-[#2D3748]">
+            <div class="font-medium">Sub total</div>
+            <div class="text-right">Rp.136.000</div>
+          </div>
+          <div class="grid grid-cols-2 text-[18px] text-[#2D3748]">
+            <div class="font-medium">Tax</div>
+            <div class="text-right">Rp.0</div>
+          </div>
+          <div class="grid grid-cols-2 text-[20px] font-medium">
+            <div>Total</div>
+            <div class="text-right">Rp.0</div>
           </div>
         </div>
       </div>
-      <!-- Related items -->
+    </div>
+    <!-- Related items -->
 
-      <div class="max-w-7xl mx-auto mt-[98px]">
+      <div class="max-w-7xl mx-auto mt-[120px]">
         <div class="flex">
           <div class="w-[20px] h-[40px] bg-black rounded-md"></div>
           <div class="text-md my-auto ml-[16px] font-semibold">Bulan ini</div>
@@ -484,10 +488,10 @@
     <footer class="max-w-full">
       <div class="grid grid-cols-2 gap-0">
         <div class="w-full h-full">
-          <img class="w-full h-full object-cover border-0" src="images/footer_bg.png" alt="" />
+          <img class="w-full h-full object-cover" src="images/footer_bg.png" alt="" />
         </div>
         <div class="w-full h-full">
-          <img class="w-full h-full object-cover border-0" src="images/footer_bg.png" alt="" />
+          <img class="w-full h-full object-cover" src="images/footer_bg.png" alt="" />
         </div>
       </div>
       <div class="bg-[#010006] h-[386px] px-[45px] text-white">
