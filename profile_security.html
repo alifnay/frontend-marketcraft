@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
+    <title>Profile Security</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!--Navbar-->
     <nav class="flex sticky top-0 z-50 w-full h-16" style="background-color: #252525">
         <div class="container mx-auto flex justify-between items-center h-16">
         <!-- logo kiri -->
@@ -58,7 +56,7 @@
         </div>
     </nav>
 
-    <div class="flex pt-[52px] mx-auto max-w-7xl mb-[200px]">
+    <div class="flex mx-auto max-w-7xl pt-[52px] mb-[200px]">
         <div class="flex flex-col w-[320px]">
             <div class="flex justify-between items-center">
                 <div class="font-bold">Kelola Akun</div>
@@ -121,7 +119,7 @@
 
         <div class="ml-[44px] w-[930px] h-auto rounded-[10px] shadow-lg border-2 border-gray-100">
             <div class="grid grid-cols-5 h-[50px] border-b-2 border-gray-100 mb-[36px]">
-                <a href="" class="flex justify justify-center items-center bg-[#F2F2F2] font-bold text-gray-500">
+                <a href="profile_biodata.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
                     Biodata
                 </a>
                 <a href="profile_pay.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
@@ -133,49 +131,71 @@
                 <a href="profile_notif.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
                     Notifikasi
                 </a>
-                <a href="profile_security.html" class="flex justify justify-center items-center hover:bg-[#F2F2F2] font-bold text-gray-500">
+                <a href="" class="flex justify justify-center items-center bg-[#F2F2F2] font-bold text-gray-500">
                     Keamanan
                 </a>
             </div>
-            <div class="flex pl-[19px]">
-                <div class="w-[261px] h-[315px] rounded-[7px] border-2 border-gray-100 shadow px-[15px] pt-[18px]">
-                    <div class="w-[230px] h-[230px] ">
-                        <img src="images\profile_pictures.jpg" alt="" class="rounded-[7px]">
-                    </div>
-                    <div class="mt-[13px]">
-                        <button class="w-[230px] h-[36px] rounded-[7px] border-2 hover:border-gray-400 font-semibold text-[15px]">Pilih Foto</button>
-                    </div>
+            <div class="flex mt-[33px] mx-[33px]">
+                <div class="flex flex-col">
+                    <div class="text-[20px] font-semibold text-gray-600">Keamanan</div>
+                    <div class="mt-[24px] text-[16px] font-semibold text-gray-400">Aturlah keamanan akun anda disini.</div>
+                    <div class="w-[400px] h-[1px] bg-gray-200 mt-[12px] mb-[40px]"></div>
+                    <a href="" class="text-[#DDD400] font-bold inline-flex w-[130px]">Aktivitas Login</a>
                 </div>
-                <div class="pl-[43px]">
-                    <div class="font-bold text-gray-500 mb-[21px]">Biodata Diri</div>
-                    <div class="grid grid-rows-3 pl-[40px] gap-y-[21px]">
-                        <div class="flex text-[15px] font-semibold">
-                            <div class="w-[120px] mr-[25px]">Nama</div>
-                            <div class="w-[200px] mr-[25px]">Username 1</div>
-                            <a href="" class="text-[#DDD400]">Ubah</a>
+                <div class="flex pl-[50px]">
+                    <div class="w-[400px] h-[320px] border-2 rounded-[7px] shadow">
+                        <div class="h-[37px] border-b-2 pl-[16px] flex items-center font-semibold text-gray-600 mb-[14px]">
+                            Aktivitas Login
                         </div>
-                        <div class="flex text-[15px] font-semibold">
-                            <div class="w-[120px] mr-[25px]">Tanggal Lahir</div>
-                            <div class="w-[200px] mr-[25px]">DD/MM/YYYY</div>
-                            <a href="" class="text-[#DDD400]">Ubah</a>
+                        <div class="flex flex-col items-center justify-center gap-[17px]">
+                            <div class="flex w-[364px] h-[78px] rounded-[10px] relative">
+                                <img src="images\BGPerangkat.jpg" alt="" class="object-cover w-full h-full rounded-[10px]">
+                                <div class="flex absolute my-[9px] ml-[10px]">
+                                    <div class="flex items-center justify-center left-[19px] font-semibold text-white bg-white w-[61px] h-[60px] rounded-[10px]">
+                                        <img src="images\pc_perangkat.png" alt="" class="absolute w-[48px] h-[54px] rounded-[10px]">
+                                    </div>
+                                    <div class="grid grid-rows-3 ml-[13px] w-[260px]">
+                                        <div class="text-white text-[12px] font-semibold">User Laptop</div>
+                                        <div class="flex justify justify-between">
+                                            <div class="text-white text-[10px]">2405:b40:49:406:9091:320e:3f1c:24db</div>
+                                            <button class="w-[46px] h-[13px] rounded-[5px] bg-white text-[#20E100] text-[9px] font-medium"> Keluar</button>
+                                        </div>
+                                        <div class="w-[75px] h-[19px] bg-white rounded-[5px] flex items-center justify-center text-[#20E100] text-[10px] font-semibold">Sedang Aktif</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex w-[364px] h-[78px] rounded-[10px] relative">
+                                <img src="images\BGPerangkat.jpg" alt="" class="object-cover w-full h-full rounded-[10px]">
+                                <div class="flex absolute my-[9px] ml-[10px]">
+                                    <div class="flex items-center justify-center left-[19px] font-semibold text-white bg-white w-[61px] h-[60px] rounded-[10px]">
+                                        <img src="images\hp_perangkat.png" alt="" class="absolute w-[48px] h-[54px] rounded-[10px]">
+                                    </div>
+                                    <div class="grid grid-rows-3 ml-[13px] w-[260px]">
+                                        <div class="text-white text-[12px] font-semibold">User Handphone</div>
+                                        <div class="flex justify justify-between">
+                                            <div class="text-white text-[10px]">2405:b40:49:406:9091:320e:3f1c:24db</div>
+                                            <button class="w-[46px] h-[13px] rounded-[5px] bg-white text-[#20E100] text-[9px] font-medium"> Keluar</button>
+                                        </div>
+                                        <div class="w-[75px] h-[19px] bg-white rounded-[5px] flex items-center justify-center text-[#20E100] text-[10px] font-semibold">Sedang Aktif</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex text-[15px] font-semibold">
-                            <div class="w-[120px] mr-[25px]">Jenis Kelamin</div>
-                            <div class="w-[200px] mr-[25px]">Pria/Wanita</div>
-                            <a href="" class="text-[#DDD400]">Ubah</a>
+                        <div class="flex justify-end pr-[22px] py-[15px]">
+                            <a href="" class="text-red-500 text-[9px] font-medium">Keluar dari semua perangkat</a>
                         </div>
-                    </div>
-                    <div class="font-bold text-gray-500 mt-[21px] mb-[21px]">Kontak</div>
-                    <div class="grid grid-rows-2 pl-[40px] gap-y-[21px]">
-                        <div class="flex text-[15px] font-semibold">
-                            <div class="w-[120px] mr-[25px]">Email</div>
-                            <div class="w-[200px] mr-[25px]">Username1@gmail.com</div>
-                            <a href="" class="text-[#DDD400]">Ubah</a>
-                        </div>
-                        <div class="flex text-[15px] font-semibold">
-                            <div class="w-[120px] mr-[25px]">Nomor HP</div>
-                            <div class="w-[200px] mr-[25px]">+62 811 xxxx xxxx</div>
-                            <a href="" class="text-[#DDD400]">Ubah</a>
+                        <div class="flex flex-col px-[19px]">
+                            <div class="h-[1px] w-[364px] bg-gray-300"></div>
+                            <div class="flex pt-[12px]">
+                                <img src="images\sign_mark.png" alt="" class="w-[24px] h-[24px]">
+                                <div class="text-[9px] text-gray-600">
+                                    Jika terdapat perangkat yang tidak anda kenal, segara klik 
+                                    <a href="" class="text-red-500 font-medium">Keluar</a> 
+                                    pada perangkat tersebut dan 
+                                    <a href="" class="text-red-500 font-medium">ubah kata sandi</a>
+                                    akun anda!
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
